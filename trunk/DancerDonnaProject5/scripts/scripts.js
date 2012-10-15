@@ -24,7 +24,10 @@ function loadOLM()
     		sessionStorage.setItem( "course_started", "1" );
     			
 			// set the values you want to persist throughout the website here
-        
+    		sessionStorage.setItem( "botswana", "0" );
+    		sessionStorage.setItem( "finland", "0" );
+    		sessionStorage.setItem( "palau", "0" );
+    		sessionStorage.setItem( "uae", "0" );
         
         }
 	}
@@ -89,4 +92,51 @@ function finishOLM()
 {
 	oScorm.save();
 	oScorm.quit();
+}
+
+function visitBotswana()
+{
+	sessionStorage.setItem( "botswana", "visited" );
+	showTest();
+}
+
+function visitFinland()
+{
+	sessionStorage.setItem( "finland", "visited" );
+	showTest();
+}
+
+function visitPalau()
+{
+	sessionStorage.setItem( "palau", "visited" );
+	showTest();
+	
+}
+
+function visitUae()
+{
+	sessionStorage.setItem ( "uae", "visited" );
+	showTest();
+}
+function visitHome()
+{
+	sessionStorage.setItem( "home", "visited" );
+	showTest();
+}
+
+// this function will check to see if every page was visited
+// if so, show the Test link
+function showTest()
+{
+	var homeVisited = sessionStorage.getItem( "home" );
+	var botswanaVisited = sessionStorage.getItem( "botswana" );
+	var finlandVisited = sessionStorage.getItem( "finland" );
+	var palauVisited = sessionStorage.getItem( "palau" );
+	var uaeVisited = sessionStorage.getItem( "uae" );
+	
+	if( homeVisited == "visited" && botswanaVisited == "visited" && finlandVisited == "visited" && palauVisited == "visited" && uaeVisited == "visited" )
+	{
+		document.getElementById( "quiz-link" ).style.display = "inline";
+	}
+	
 }
