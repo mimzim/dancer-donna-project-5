@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>IST 5313 - Final Project Template</title>
+		<script src="scripts/quiz1.js" language="javascript"></script>
+		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
+	</head>	
+	<body>
+		<header>
+			<img src="images/header.png" alt="Online Learning Module - IST 5313 Final Project Template Graphic Header"
+				title="Online Learning Module - IST 5313 Final Project Template Graphic Header"/>
+		</header>
+		<section id="main-content">
+			<article id="main-info">
+			
+				<header>
+					<h1 id="topic-title">Assessment</h1>
+				</header>
+				
+				<p>Take this test</p>			
+				
+				<form onSubmit="javascript:submitQuiz1(); return false;" name="quiz1" id="quiz1">
+					<label for="question1">What color is the sky?</label><br/>
+					<input type="radio" id="question1" name="question1" value="0" required="required">Blue</input><br/>
+					<input type="radio" id="question1" name="question1" value="1" required="required">Green</input><br/>
+					<input type="radio" id="question1" name="question1" value="2" required="required">Red</input><br/>
+					<br/>
+					<label for="question2">Which of the following is your favorite professor?</label><br/>
+					<input type="radio" id="question2" name="question2" value="0" required="required">Berland</input><br/>
+					<input type="radio" id="question2" name="question2" value="1" required="required">Fies</input><br/>
+					<input type="radio" id="question2" name="question2" value="2" required="required">Yuen</input><br/>
+					
+					<br/>
+					<input type="submit" value="Submit your Answers"/>
+					<input type="reset" value="Reset your Answers"/>
+				</form>
+					
+			</article>
+			
+			<aside id="aside-info">
+				<header>
+					<p id="aside-title-audio">Audio</p>
+				</header>
+					<audio controls="none" autoplay="autoplay" >
+						<source src="audio/people113.mp3" type="audio/mp3">
+						<source src="audio/people113.ogv" type="audio/ogg">
+						Your browser does not support the audio tag.
+					</audio>
+					<br/>
+				<header>
+					<p id="aside-title-audio">Transcript</p>
+				</header>
+				<div id="transcript">
+					Take the test and click submit.
+				</div>
+			</aside>
+			<div id="main-content-clear"></div>
+		</section>
+		
+		<nav id="sub-navigation">
+		</nav>
+		<nav id="navigation">
+			<a href="topic-1.html" class="menu-link">Topic 1</a>
+			<a href="topic-2.html" class="menu-link">Topic 2</a>
+			<a href="topic-3.html" class="menu-link">Topic 3</a>
+			<span class="menu-link-inactive">Assessment</span>
+			<a href="certificate.html" class="menu-link">Certificate of Completion</a>
+		</nav>
+
+	</body>
+</html>
