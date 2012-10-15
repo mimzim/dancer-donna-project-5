@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 300 200">
+	
+	
+	<rect width="100" height="200" x="0" y="0" fill="#cc0000" />
+	
+	<rect width="200" height="66" x="100" y="0" fill="green"/>
+	
+	<rect width="200" height="66" x="100" y="66" fill="white"/>
+	
+	<rect width="200" height="67" x="100" y="132" fill="#black"/>
+	
+	<rect width="300" height="200" x="0" y="0" fill="none" stroke="black" stroke-width="2"/>
+	
+</svg>
