@@ -1,4 +1,3 @@
-// This function processes the quiz data
 function submitQuiz()
 {
 	var numberCorrect = 0;
@@ -44,6 +43,6 @@ function submitQuiz()
 		numberCorrect = numberCorrect + 1;
 		}
 	
-var score= numberCorrect /6;
+var score= numberCorrect /6*100;
 alert( numberCorrect /6 );
 }
