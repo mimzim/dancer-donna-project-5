@@ -1,8 +1,9 @@
 body
 {
-	background: lavender;
+	background: #333333;
 	font-family: lucida sans;
-	color: darkslategrey;
+	color: white;
+	
 }
 
 nav a
@@ -24,14 +25,14 @@ nav a
 {
 	display: table-cell;
 	width: 500px;
-	text-align:center;
+	text-align: center;
 }
 
 #navigation
 {
-	background: #666666;	
+	background: orange;	
 	padding: 5px;
-	width: 886px;
+	width: 1000px;
 	float: left;
 	height: 18px;
 }
@@ -48,7 +49,7 @@ nav a
 
 .menu-link:hover
 {
-	color: darkblue;
+	color: #CC2900;
 }
 
 .menu-link-inactive
@@ -59,4 +60,16 @@ nav a
 	font-family: LucidaSans;
 	font-size: 20px;
 	color: black;
+}
+
+.footer-link
+{
+	color:orange;
+}
+
+.column-home
+{
+	display: table-cell;
+	width: 400px;
+	text-align: center;
 }
