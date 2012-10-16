@@ -5,6 +5,7 @@
 		<title>Countries of the World</title>
 		<script src="scripts/sessionstorage.1.4.js" language="javascript"></script>
 		<script src="scripts/scripts.js" language="javascript"></script>
+		<script src="scripts/quiz1.js" language="javascript"></script>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
 	</head>	
 	<body onLoad="javascript:startCourse();javascript:visitHome()">
@@ -23,86 +24,47 @@
 				<h1>Quiz</h1>
 			</header>
 			
-			<form>
-			
+			<form onSubmit="javascript:submitQuiz(); return false;" name="quiz1" id="quiz1">
 				<label for="name">What is your first and last name?</label>
-				<input type="text" size="50"
-					id="name" name="name" required="required"/>
-				<br/>
+				<input type="text" size="50" id="name" name="name" required="required"/><br/>
 				
 				<br/><br/>
+				<p>Read each question.  Choose the best response and click the button next to the answer.  Choose submit when finished.</p>
 				
 				<label for="question1">Which country is a large oil producer?</label><br/>
-				
-				<input type="radio" id="question1" name="question1">
-					Finland
-				</input><br/>
-				<input type="radio" id="question1" name="question1">
-					United Arab Emirates
-				</input><br/>
-				<input type="radio" id="question1" name="question1">
-					Botswana
-				</input><br/></br>
+				<input type="radio" id="question1" name="question1" value="0" required="required">Finland</input><br/>
+				<input type="radio" id="question1" name="question1" value="1" required="required">United Arab Emirates</input><br/>
+				<input type="radio" id="question1" name="question1" value="2" required="required">Botswana</input><br/></br>
 				
 				
 				<label for="question2">Which country starts with the letter B?</label><br/>
-				<input type="radio" id="question2" name="question2">
-					Botswana
-				</input><br/>
-				<input type="radio" id="question2" name="question2">
-					Palau
-				</input><br/>
-				<input type="radio" id="question2" name="question2">
-					Finland
-				</input><br/>
+				<input type="radio" id="question2" name="question2" value="0" required="required">Botswana</input><br/>
+				<input type="radio" id="question2" name="question2" value="1" required="required">Palau</input><br/>
+				<input type="radio" id="question2" name="question2" value="2" required="required">Finland</input><br/>
 				</br>
 								
 				<label for="question3">Which country starts with the letter F?</label><br/>
-				<input type="radio" id="question3" name="question3">
-					Botswana
-				</input><br/>
-				<input type="radio" id="question3" name="question3">
-					Palau
-				</input><br/>
-				<input type="radio" id="question3" name="question3">
-					Finland
-				</input><br/>
+				<input type="radio" id="question3" name="question3" value="0" required="required">Botswana</input><br/>
+				<input type="radio" id="question3" name="question3" value="1" required="required">Palau</input><br/>
+				<input type="radio" id="question3" name="question3" value="2" required="required">Finland</input><br/>
 				</br>
 				
 				<label for="question4">Which country starts with the letter P?</label><br/>
-				<input type="radio" id="question4" name="question4">
-					Botswana
-				</input><br/>
-				<input type="radio" id="question4" name="question4">
-					Finland
-				</input><br/>
-				<input type="radio" id="question4" name="question4">
-					Palau
-				</input><br/>
+				<input type="radio" id="question4" name="question4" value="0" required="required">Botswana</input><br/>
+				<input type="radio" id="question4" name="question4" value="1" required="required">Finland</input><br/>
+				<input type="radio" id="question4" name="question4" value="2" required="required">Palau</input><br/>
 				</br>
 				
 				<label for="question5">Which country is located in Africa?</label><br/>
-				<input type="radio" id="question5" name="question5">
-					Botswana
-				</input><br/>
-				<input type="radio" id="question5" name="question5">
-					Finland
-				</input><br/>
-				<input type="radio" id="question5" name="question5">
-					Palau
-				</input><br/>
+				<input type="radio" id="question5" name="question5" value="0" required="required">Botswana</input><br/>
+				<input type="radio" id="question5" name="question5" value="1" required="required">Finland</input><br/>
+				<input type="radio" id="question5" name="question5" value="2" required="required">Palau</input><br/>
 				</br>
 				
 				<label for="question6">Which country starts with the letter U?</label><br/>
-				<input type="radio" id="question6" name="question6">
-					Botswana
-				</input><br/>
-				<input type="radio" id="question6" name="question6">
-					United Arab Emirates
-				</input><br/>
-				<input type="radio" id="question6" name="question6">
-					Palau
-				</input><br/>
+				<input type="radio" id="question6" name="question6" value="0" required="required">Botswana</input><br/>
+				<input type="radio" id="question6" name="question6" value="1" required="required">United Arab Emirates</input><br/>
+				<input type="radio" id="question6" name="question6" value="2" required="required">Palau</input><br/>
 				</br>
 					
 			
