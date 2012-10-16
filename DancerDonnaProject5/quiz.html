@@ -2,53 +2,102 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8"/>
-		<title>IST 5313 - Final Project Template</title>
-		<script src="scripts/quiz1.js" language="javascript"></script>
+		<title>Countries of the World</title>
+		<script src="scripts/sessionstorage.1.4.js" language="javascript"></script>
+		<script src="scripts/scripts.js" language="javascript"></script>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
 	</head>	
-	<body>
-	
-		<header>
-			<h1>Quiz</h1>
-		</header>
-		
+	<body onLoad="javascript:startCourse();javascript:visitHome()">
 		<nav>
-			<a href="botswana.html">Botswana</a>
-			<a href="finland.html">Finland</a>
-			<a href="palau.html">Palau</a>
-			<a href="uae.html">United Arab Emirates</a>
+			<a href="index.html">Home</a>
+			<a href="botswana-1.html">Botswana</a>
+			<a href="finland-2.html">Finland</a>
+			<a href="palau-3.html">Palau</a>
+			<a href="uae-4.html">United Arab Emirates</a>
 			<a href="quiz.html">Quiz</a>
 		</nav>
-		
-		<section id="main-content">
-			<article id="main-info">
+	<section>
+			<header>
+				<h1>Quiz</h1>
+			</header>
 			
-				<header>
-					<h1 id="topic-title">Assessment</h1>
-				</header>
-				
-				<p>Take this test</p>			
-				
-				<form onSubmit="javascript:submitQuiz1(); return false;" name="quiz1" id="quiz1">
-					<label for="question1">What color is the sky?</label><br/>
-					<input type="radio" id="question1" name="question1" value="0" required="required">Blue</input><br/>
-					<input type="radio" id="question1" name="question1" value="1" required="required">Green</input><br/>
-					<input type="radio" id="question1" name="question1" value="2" required="required">Red</input><br/>
-					<br/>
-					<label for="question2">Which of the following is your favorite professor?</label><br/>
-					<input type="radio" id="question2" name="question2" value="0" required="required">Berland</input><br/>
-					<input type="radio" id="question2" name="question2" value="1" required="required">Fies</input><br/>
-					<input type="radio" id="question2" name="question2" value="2" required="required">Yuen</input><br/>
-					
-					<br/>
-					<input type="submit" value="Submit your Answers"/>
-					<input type="reset" value="Reset your Answers"/>
-				</form>
-					
-			</article>
+			<form>
 			
-			<div id="main-content-clear"></div>
+				<label for="name">What is your first and last name?</label>
+				<input type="text" size="50"
+					id="name" name="name" required="required"/>
+				<br/>
+				
+				<br/><br/>
+				
+				<label for="question1">Which country has a large nature preserve?</label><br/>
+				
+				<input type="radio" id="question1" name="question1">
+					Finland
+				</input><br/>
+				
+				<input type="radio" id="question1" name="question1">
+					UAE
+				</input><br/>
+				
+				<input type="radio" id="question1" name="question1">
+					Botswana
+				</input><br/></br>
+				
+				
+				<label for="question2">Of the countries studied during this learning module, which country has the largest population?</label><br/>
+				<input type="checkbox" id="question2" name="question2">
+					Finland
+				</input><br/>
+				<input type="checkbox" id="question2" name="question2">
+					Botswana
+				</input><br/>
+				<input type="checkbox" id="question2" name="question2">
+					UAE
+				</input><br/>
+				</br>
+								
+				<label for="question2">If you won a free trip to one of the three countries below, which country would you choose to visit?</label><br/>
+				<input type="checkbox" id="question2" name="question2">
+					Botswana
+				</input><br/>
+				<input type="checkbox" id="question2" name="question2">
+					Finland
+				</input><br/>
+				<input type="checkbox" id="question2" name="question2">
+					Palau
+				</input><br/>
+				</br>
+				
+				
+					
+			
+			
+				<input type="submit" value="Submit Your Answers"/>
+				<input type="reset" value="Reset Your Answers"/>
+			</form>
+			
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	<footer>
+ 			<cite>
+ 			The flag images are author created images.  The country images were retrieved from <a href="http://www.creativecommons.org">Creative Commons</a>.</br>
+ 			The country information was retrieved from <a href="http://www.nationsonline.org"> Nations Online</a></br>
+ 			This page best viewed on Firefox v. 15+
+ 			</cite>
+ 		</footer>		
+			
+			
+			
+			
+			
+			
 		</section>
-		
-		</body>
-</html>
+	</body>
+</html>	
