@@ -26,3 +26,12 @@ nav a
 	width: 500px;
 	text-align:center;
 }
+
+#navigation
+{
+	background: #666666;	
+	padding: 5px;
+	width: 886px;
+	float: left;
+	height: 18px;
+}
