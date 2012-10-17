@@ -44,5 +44,5 @@ function submitQuiz()
 		}
 	
 var score= numberCorrect/6*100;
-alert(" You have " + numberCorrect/6*100 + " % " + " correct.");
+alert(" You have " + numberCorrect/6*100 + "% " + " correct.");
 }
