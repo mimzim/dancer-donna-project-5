@@ -43,6 +43,6 @@ function submitQuiz()
 		numberCorrect = numberCorrect + 1;
 		}
 	
-var score= numberCorrect / 6 * 100;
-alert("Your score is" + numberCorrect + "%" );
+var score= numberCorrect/6*100;
+alert("Your score is" + numberCorrect/6*100 + "%" );
 }
